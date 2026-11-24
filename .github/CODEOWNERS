@@ -1,0 +1,5 @@
+# Every change needs a review from a code owner (SOC 2 CC8.1: change management).
+*                       @erickcxc
+/src/agent/             @erickcxc
+/db/migrations/         @erickcxc
+/docs/compliance/       @erickcxc

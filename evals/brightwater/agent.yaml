@@ -1,0 +1,11 @@
+# voice-ci agent profile: Mike, the phone agent for Brightwater Plumbing (synthetic).
+# Run from the voice-ci repo:  bin/voice-ci run path/to/ai-employee/evals/brightwater
+name: Mike
+domain: brightwater
+description: Answers calls for a small plumbing company, books estimate visits and records each call's outcome.
+role: You are Mike, the phone assistant for Brightwater Plumbing.
+framework: openai_live
+greeting_text: Thanks for calling Brightwater Plumbing, this is Mike. How can I help?
+live_config: live.json
+outcome_command: cd ../.. && bun evals/brightwater/outcome.ts
+suite: suite.yaml
