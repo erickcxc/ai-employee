@@ -6,6 +6,11 @@ updates:
     directory: /
     schedule: { interval: weekly }
     open-pull-requests-limit: 5
+    ignore:
+      # typescript-eslint does not support TypeScript 7 yet ("does not support TS 7.0" in lint).
+      # Take the next major by hand once it does; minor and patch releases still flow weekly.
+      - dependency-name: typescript
+        update-types: ["version-update:semver-major"]
     groups:
       libraries:
         patterns: ["*"]
